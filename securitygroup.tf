@@ -1,6 +1,6 @@
 resource "aws_security_group" "group" {
   name   = "helium-miner-security-group"
-  vpc_id = aws_vpc.vpc.id
+  vpc_id = module.vpc.vpc_id
   ingress {
     from_port        = 1680
     to_port          = 1680

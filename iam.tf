@@ -61,7 +61,7 @@ data "aws_iam_policy_document" "combined" {
   ]
 }
 
-resource "aws_iam_instance_profile" "test_profile" {
+resource "aws_iam_instance_profile" "profile" {
   name = "miner_profile"
   role = aws_iam_role.role.name
 }
